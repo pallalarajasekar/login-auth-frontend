@@ -4,6 +4,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { ForgetComponent } from './forget/forget.component';
 import { LoginComponent } from './login/login.component';
 import { RegistrationComponent } from './registration/registration.component';
+import { ResetPasswordComponent } from './reset-password/reset-password.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path: 'create-account',
     component: RegistrationComponent
+  },
+  {
+    path: 'reset/:email/:id',
+    component: ResetPasswordComponent
   },
   {
     path: "**",
