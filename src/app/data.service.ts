@@ -19,7 +19,7 @@ export class DataService {
   }
 
   pwdReset(data: any){
-    return this.http.put( environment.apiURL + 'forgot', data);
+    return this.http.post( environment.apiURL + 'forgot', data);
   }
 
   verfifyString(data: any){
